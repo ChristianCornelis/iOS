@@ -1,0 +1,13 @@
+<A> "You are in a round room with a sink and a doorway North."
+-if "cup" "cup of water" "You fill the cup with water at the sink."
+1. "Go North." <B>
+<B> "You are in a square room with a door North and a path to the East."
+1. "Follow the path to the East." <C>
+2. "Go through the door to the North."
+-if "key" go <D> else "The door is locked. It looks like you need a key."
+3. "Go South." <A>
+<C> "You are in a field. There is a path to the West."
+-inventory "You see a key and a cup on the ground which you pick up." "key", "cup"
+1. "Go to the West." <B>
+<D>"You have reached the end."
+-end
